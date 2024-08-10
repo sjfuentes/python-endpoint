@@ -28,24 +28,3 @@ variable "alb_target_group_arn" {
   description = "ARN of the load balancer TG"
 }
 
-variable "db_username" {
-  type        = string
-  description = "Database username"
-}
-
-variable "db_name" {
-  type        = string
-  description = "Database name"
-}
-
-variable "db_address" {
-  type = string
-}
-
-variable "db_secret_arn" {
-  type = string
-}
-
-variable "db_secret_key_id" {
-  type = string
-}

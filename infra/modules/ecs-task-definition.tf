@@ -11,10 +11,6 @@ resource "aws_ecs_task_definition" "this" {
     image_url        = aws_ecr_repository.api.repository_url
     cloudwatch_group = aws_cloudwatch_log_group.ecs.name
     region           = var.region
-    db_address       = var.db_address
-    db_name          = var.db_name
-    db_username      = var.db_username
-    db_password_arn  = var.db_secret_arn
   })
   tags = {
     Name = format("%s-ecs-task-definition", var.prefix)
