@@ -1,5 +1,5 @@
 resource "aws_ecr_repository" "api" {
-  name                 = format("%s-crud-app", var.prefix)
+  name                 = format("%s-example-app", var.prefix)
   force_delete         = true
   image_tag_mutability = "MUTABLE"
 
