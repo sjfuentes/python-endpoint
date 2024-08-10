@@ -17,12 +17,3 @@ variable "subnets" {
   type        = list(string)
   description = "The list of the subnets names"
 }
-variable "db_username" {
-  type        = string
-  description = "Database username"
-}
-
-variable "db_name" {
-  type        = string
-  description = "Database name"
-}
