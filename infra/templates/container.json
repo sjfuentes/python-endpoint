@@ -1,0 +1,27 @@
+[
+    {
+        "name": "${application}",
+        "image": "${image_url}",
+        "essential": true,
+        "portMappings": [
+             {
+                "hostPort": 5000,
+                "containerPort": 5000,
+                "protocol": "tcp"
+             }
+         ],
+         "logConfiguration": {
+          "logDriver": "awslogs",
+          "options": {
+            "awslogs-group": "${cloudwatch_group}",
+            "awslogs-region": "${region}",            
+            "awslogs-stream-prefix": "${application}"
+          }
+        },
+        "environment": [],
+        "secrets": [],                 
+        "links": [],
+        "command": [],
+        "entryPoint": []  
+    }
+]
